@@ -1,5 +1,6 @@
 import React from "react";
 import { Code, Terminal, GitBranch, Package } from "lucide-react";
+import { Navbar } from "@/components/navbar";
 
 function Header() {
   return (
@@ -12,11 +13,11 @@ function Header() {
       </div>
       
       <h2 className="text-2xl font-semibold text-gray-200">
-        Next.js Development Template
+        Modern Web Development Platform
       </h2>
       
       <p className="text-lg text-gray-400 max-w-2xl mx-auto">
-        A production-ready Next.js template with TypeScript, Tailwind CSS, and a comprehensive UI component library.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
       </p>
     </div>
   );
@@ -120,16 +121,6 @@ function CallToAction() {
   );
 }
 
-function Footer() {
-  return (
-    <div className="text-center text-gray-500 text-sm space-y-1">
-      <p>Next.js • TypeScript • Tailwind CSS • Radix UI</p>
-      <p className="text-xs">
-        Production-ready template with modern development tools
-      </p>
-    </div>
-  );
-}
 
 function MainContent() {
   return (
@@ -143,11 +134,13 @@ function MainContent() {
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gray-950 text-gray-100 flex items-center justify-center p-6">
-      <div className="max-w-4xl mx-auto space-y-8">
-        <Header />
-        <MainContent />
-        <Footer />
+    <div className="min-h-screen bg-gray-950 text-gray-100">
+      <Navbar />
+      <div className="flex items-center justify-center p-6 pt-20">
+        <div className="max-w-4xl mx-auto space-y-8">
+          <Header />
+          <MainContent />
+        </div>
       </div>
     </div>
   );
